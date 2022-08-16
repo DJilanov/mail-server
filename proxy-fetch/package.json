@@ -1,0 +1,19 @@
+{
+  "name": "mariospammer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "xvfb-run --server-args=\"-screen 0 1024x768x24\" node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "proxy-lists": "latest",
+    "express": "latest",
+    "proxy-verifier": "latest",
+    "puppeteer": "latest",
+    "node-fetch": "2.6.1"
+  }
+}

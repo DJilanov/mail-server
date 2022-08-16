@@ -1,0 +1,30 @@
+{
+	"name": "email-extractor",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"lint": "./node_modules/eslint/bin/eslint.js . --fix",
+		"start": "nodemon ./bin/www.js",
+		"start-mailin": "sudo mailin --webhook http://mitko.club:13800/webhook",
+		"test": "./node_modules/.bin/mocha --reporter spec"
+	},
+	"dependencies": {
+		"body-parser": "^1.18.2",
+		"cookie-parser": "^1.4.3",
+		"dotenv": "^5.0.1",
+		"express": "~4.16.0",
+		"helmet": "^4.1.0",
+		"http-errors": "~1.6.2",
+		"validator": "^10.4.0",
+		"express-rate-limit": "5.2.6",
+		"nodemon": "2.0.9",
+		"mailin": "3.0.4"
+	},
+	"devDependencies": {
+		"chai": "4.2.0",
+		"cors": "^2.8.5",
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-plugin-import": "^2.12.0"
+	}
+}
